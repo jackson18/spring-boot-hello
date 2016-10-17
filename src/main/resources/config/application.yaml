@@ -1,0 +1,19 @@
+#这个优先级较高
+
+#自定义配置
+hello: 
+  secret: ${random.value}
+  number: ${random.int}
+  name: www.hello.com
+  desc: ${hello.name} is a domain name
+
+#端口
+server:
+  port: 8080
+  
+
+#spring jsckson
+spring: 
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Chongqing
