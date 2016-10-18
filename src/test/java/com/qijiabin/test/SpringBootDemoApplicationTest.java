@@ -24,6 +24,7 @@ import com.qijiabin.controller.IndexController;
  * ========================================================
  * 修订日期     修订人    描述
  */
+// SpringJUnit支持，由此引入Spring-Test框架支持！
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class SpringBootDemoApplicationTest {
