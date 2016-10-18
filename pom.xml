@@ -56,6 +56,16 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		<!-- thymeleaf模板引擎 -->
+		<dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<!-- freemarker模板引擎 -->
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+		</dependency>
 		<!-- 自动编译重启 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -69,6 +79,14 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<!-- 改变JDK编译版本 -->
+			<plugin>
+			   <artifactId>maven-compiler-plugin</artifactId>
+			   <configuration>
+			      <source>1.7</source>
+			      <target>1.7</target>
+			   </configuration>
 			</plugin>
 		</plugins>
 	</build>
