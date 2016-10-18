@@ -64,6 +64,11 @@ public class IndexController {
 		user.setDate(new Date());
 		return user;
 	}
+	
+	@RequestMapping("/zeroException")
+    public int zeroException(){
+       return 100/0;
+    }
 
 }
 
