@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.MultipartConfigFactory;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.Bean;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 /**
  * ========================================================
@@ -21,6 +22,8 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 // 这个就是扫描相应的Servlet包
 @ServletComponentScan
+// 为了让@Async注解能够生效
+@EnableAsync
 public class SpringBootDemoApplication {
 	
 	/**

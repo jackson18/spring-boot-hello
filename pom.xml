@@ -66,6 +66,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-freemarker</artifactId>
 		</dependency>
+		<!-- 监控和管理生产环境 -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 		<!-- 自动编译重启 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
